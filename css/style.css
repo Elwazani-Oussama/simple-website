@@ -13,7 +13,6 @@ body{
 }
 .header{
     background-color: rgb(19, 19, 19);
-    /* width:960px; */
     height:105px;
     display: flex;
     align-items: center;
@@ -89,12 +88,12 @@ body{
 
 /* article part  */
 article{
-    margin:100px 50px;
+    margin:100px 100px;
     position:relative; 
     color:white;
 }
 section{
-    width: 300px;
+    width: 275px;
     height:500px;
     background-color: rgb(116, 115, 115);
     border: none;
