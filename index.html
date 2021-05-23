@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morocco</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- Start header part -->
+  <header class="header">
+    <img src="img/logo.png" alt="logo">
+  </header>
+  <!-- end header part -->
+
+  <!-- start navbar part -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#Agadir">Agadir</a></li>
+      <li><a href="#Marrakech">Marrakech</a></li>
+      <li><a href="#Essaouira">Essaouira</a></li>
+      <li><a href="#Tanger">Tanger</a></li>
+    </ul>
+  </nav>
+  <!-- end navbar part -->
+
+
+  <!-- start slides part -->
+  <div class="Slides">
+      <div class="mySlides">
+        <img src="img/aga1.jpeg" width="100%" height="550px">
+      </div>
+      <div class="mySlides">
+        <img src="img/kech1.jpeg" width="100%"  height="550px">
+      </div>
+      <div class="mySlides">
+        <img src="img/ess2.jpeg" width="100%"  height="550px">
+      </div>
+      <div class="mySlides">
+        <img src="img/kech3.jpeg" width="100%" height="550px">
+      </div>
+      <div class="mySlides">
+        <img src="img/tan2.jpeg" width="100%" height="550px">
+      </div>
+      <div class="mySlides">
+        <img src="img/ess3.jpeg" width="100%"  height="550px">
+      </div>
+      <!-- <h1>This Morocco</h1> -->
+      <button  class="btn"> <a href="#">Visit us</a></button>
+  </div>
+  <!--  slides part -->
+
+  <!-- start article part  -->
+  <article>
+    <section id="Agadir" class="Aga">
+      <h2>Agadir</h2>
+      <img src="img/aga1.jpeg" alt="Agadir">
+      <p>
+        Agadir, a city along Morocco’s southern Atlantic coast, 
+        in the foothills of the Anti-Atlas Mountains, is the capital 
+        of Agadir-Ida Ou Tanane province. A resort destination, 
+        it's known for its golf courses, wide crescent beach and 
+        seaside promenade lined with cafes, restaurants and bars. 
+        Agadir's hilltop kasbah was destroyed in a 1960 earthquake, 
+        but its original old wall remains standing...
+        <a href="#">Visit me</a>
+      </p>
+    </section>
+    <section class="Mar" id="Marrakech">
+      <h2>Marrakech</h2>
+      <img src="img/kech1.jpeg" alt="Marrakech">
+      <p>
+        Marrakesh, a former imperial city in western Morocco, is a major economic 
+        center and home to mosques, palaces and gardens. The medina is a densely 
+        packed, walled medieval city dating to the Berber Empire, with mazelike 
+        alleys where thriving souks (marketplaces) sell traditional textiles, 
+        pottery and jewelry. A symbol of the city, and visible for miles, is the 
+        Moorish minaret of 12th-century Koutoubia Mosque...
+        <a href="#">Visit me</a>
+      </p>
+    </section>
+    <section class="Ess" id="Essaouira">
+      <h2>Essaouira</h2>
+      <img src="img/ess2.jpeg" alt="Essaouira">
+      <p>
+        Essaouira is a port city and resort on Morocco’s Atlantic coast. 
+        Its medina (old town) is protected by 18th-century seafront ramparts 
+        called the Skala de la Kasbah, which were designed by European engineers. 
+        Old brass cannons line the walls, and there are ocean views. Strong 
+        "Alizée" trade winds make the city’s crescent beach popular for surfing, 
+        windsurfing and kitesurfing...
+        <a href="#">Visit me</a>
+      </p>
+    </section>
+    <section class="Tan" id="Tanger">
+      <h2>Tanger</h2>
+      <img src="img/tan2.jpeg" alt="Tanger">
+      <p>
+        Tangier, a Moroccan port on the Strait of Gibraltar, 
+        has been a strategic gateway between Africa and Europe 
+        since Phoenician times. Its whitewashed hillside medina 
+        is home to the Dar el Makhzen, a palace of the sultans 
+        that's now a museum of Moroccan artifacts. The American 
+        Legation Museum, also in the medina, documents early diplomatic 
+        relations between the U.S. and Morocco in an 1821 Moorish-style 
+        former consulate...
+        <a href="#">Visit me</a>
+      </p>
+    </section>
+  </article>
+
+
+  <!-- start footer part  -->
+  <footer  class="footer">
+    <a href="#" class="social-icon">
+      <i class="fa fa-facebook"></i>
+    </a>
+    <a href="#"  class="social-icon">
+      <i class="fa fa-youtube"></i>
+    </a>
+    <a href="#" class="social-icon">
+      <i class="fa fa-twitter"></i>
+    </a>
+    <a href="#" class="social-icon">
+      <i class="fa fa-pinterest"></i>
+    </a>
+    <a href="#" class="social-icon">
+      <i class="fa fa-flickr"></i>
+    </a>
+    <a href="#" class="social-icon">
+      <i class="fa fa-whatsapp"></i>
+    </a>
+  </footer>
+
+  <!-- end footer part  -->
+
+
+
+
+
+
+
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 1500); // Change image every 1,5 seconds
+    }
+  </script>
+
+</body>
