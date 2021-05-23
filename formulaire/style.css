@@ -13,11 +13,11 @@ body{
 
 .container {
     background-color:rgba(36, 36, 36, 0.66);
-    width:48%;
-    height:730px;
+    width:45%;
+    height:700px;
     border-radius: 20px;
     position:relative;
-    left:25%;
+    left:27%;
     top:17px;
 }
 form{
@@ -33,12 +33,12 @@ h1{
 
 div{
     background-color: white;
-    width: 70%;
+    width: 69%;
     border-radius: 55px;
     margin:14px;
     padding:10px;
     position:relative;
-    left:10%;
+    left:12%;
 }
 
 input{
@@ -68,5 +68,5 @@ label{
     border:none;
     background-color:yellow;
     position:relative;
-    left:8%;
+    left:11%;
 }
